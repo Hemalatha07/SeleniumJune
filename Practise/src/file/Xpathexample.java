@@ -11,6 +11,8 @@ public class Xpathexample {
 
 	public static void main(String[] args) {
 		WebDriver driver = new FirefoxDriver();
+		
+		
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/search?q=laptops&marketplace=FLIPKART&otracker=start&as-show=on&as=off");
 		List<WebElement> laptops = driver.findElements(By.xpath("//div[@class='_3wU53n']"));
